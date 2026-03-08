@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Background Color Picker</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    transition: background 0.5s;
+}
+
+h1{
+    margin-top:50px;
+}
+
+.color-container{
+    margin-top:40px;
+}
+
+.color-btn{
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    margin:10px;
+    cursor:pointer;
+    box-shadow:0 4px 6px rgba(0,0,0,0.3);
+}
+
+.color-btn:hover{
+    transform:scale(1.1);
+}
+</style>
+
+<script>
+function changeColor(color){
+    document.body.style.background=color;
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Choose a Background Color</h1>
+<p>Click any color below to change the page background</p>
+
+<div class="color-container">
+
+<button class="color-btn" style="background:red;" onclick="changeColor('red')"></button>
+<button class="color-btn" style="background:blue;" onclick="changeColor('blue')"></button>
+<button class="color-btn" style="background:green;" onclick="changeColor('green')"></button>
+<button class="color-btn" style="background:yellow;" onclick="changeColor('yellow')"></button>
+<button class="color-btn" style="background:purple;" onclick="changeColor('purple')"></button>
+<button class="color-btn" style="background:orange;" onclick="changeColor('orange')"></button>
+<button class="color-btn" style="background:pink;" onclick="changeColor('pink')"></button>
+<button class="color-btn" style="background:black;" onclick="changeColor('black')"></button>
+<button class="color-btn" style="background:white;" onclick="changeColor('white')"></button>
+
+</div>
+
+</body>
+</html>
